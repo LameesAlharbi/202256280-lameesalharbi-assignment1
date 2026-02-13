@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lamees Alharbi — Software Engineering student portfolio. Projects, skills, and contact."
+    />
+    <title>Lamees Alharbi | Portfolio</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <!--
+      note:
+      Keeping the structure clean + semantic from day 1, so future assignments are easy to build on.
+    -->
+
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="logo" href="#home" aria-label="Go to top">
+          Lamees
+        </a>
+
+        <ul class="nav-links nav-tabs">
+            <li><a class="tab-link" href="#about">About</a></li>
+            <li><a class="tab-link" href="#projects">Projects</a></li>
+            <li><a class="tab-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-pressed="false"
+          title="Toggle theme"
+        >
+          Theme
+        </button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <!-- HERO -->
+      <section class="hero container" aria-label="Introduction">
+        <div class="hero-text">
+          <h1>Hi, I am Lamees Alharbi</h1>
+
+          <p class="tagline">
+            Software Engineering Student • Builder • Detail-Oriented Thinker
+          </p>
+
+          <p class="intro">
+            I am a Software Engineering student at KFUPM who enjoys building clean,
+            structured, and purposeful web experiences. I care about clarity,
+            precision, and understanding every line of code I write.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-btn" href="#projects">View Projects</a>
+            <a class="secondary-link" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <figure class="hero-image">
+          <div class="img-placeholder" aria-label="Profile image placeholder"></div>
+          <figcaption class="sr-only">Profile image</figcaption>
+        </figure>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section container">
+        <header class="section-header">
+          <h2>About Me</h2>
+          <p class="section-subtitle">
+            A quick snapshot — the longer story is in my projects.
+          </p>
+        </header>
+
+        <p>
+          My interests include front-end development, user experience, and building
+          systems that solve real problems. I approach projects with curiosity and
+          structure, and I always aim to make my work readable, responsive,
+          and reliable.
+        </p>
+
+        <ul class="highlights">
+          <li><strong>Location:</strong> Dhahran, Saudi Arabia</li>
+          <li><strong>Major:</strong> Software Engineering</li>
+          <li><strong>Focus:</strong> Web Development</li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section container">
+        <header class="section-header">
+          <h2>Projects</h2>
+          <p class="section-subtitle">
+            Two highlights for now — this portfolio will grow each assignment.
+          </p>
+        </header>
+
+        <div class="projects-grid" role="list">
+          <article class="project-card" role="listitem">
+            <div class="img-placeholder project-img" aria-label="Project image placeholder"></div>
+            <div class="project-content">
+              <h3>Dining Subscription System</h3>
+              <p>
+                A structured software design project where I translated requirements into
+                clear models and organized implementation logic.
+              </p>
+              <button class="secondary-btn" type="button" data-project="dss">
+                Details
+              </button>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem">
+            <div class="img-placeholder project-img" aria-label="Project image placeholder"></div>
+            <div class="project-content">
+              <h3>Masar (Concept)</h3>
+              <p>
+                A platform concept to help students explore majors through guided micro-experiences
+                and mentorship-based learning.
+              </p>
+              <button class="secondary-btn" type="button" data-project="masar">
+                Details
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section container">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p class="section-subtitle">
+            Want to connect or collaborate? Send a message below.
+          </p>
+        </header>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="nameInput">Name</label>
+            <input id="nameInput" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="emailInput">Email</label>
+            <input
+              id="emailInput"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="messageInput">Message</label>
+            <textarea
+              id="messageInput"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="primary-btn" type="submit">Send</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <address class="contact-note">
+          <!-- Optional later: add LinkedIn/GitHub links here -->
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Lamees Alharbi. All rights reserved.</p>
+        <a class="back-to-top" href="#top">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
