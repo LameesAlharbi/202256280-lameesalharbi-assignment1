@@ -54,8 +54,8 @@ body {
   max-width: 900px;
   margin: 60px auto;
   padding: 40px;
-  background: rgb(255, 200, 217);          /* box background */
-  border-radius: 12px;        /* rounded corners */
+  background: rgb(255, 200, 217);          
+  border-radius: 12px;        
   box-shadow: 0 8px 25px rgba(0,0,0,0.08); /* soft shadow */
 }
 
@@ -84,7 +84,7 @@ body.dark .section {
 }
 
 /* =========
-   Header / Nav
+   Header/Nav
 ========= */
 
 .site-header {
@@ -116,7 +116,7 @@ body.dark .section {
   text-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
-/* DARK MODE → white */
+
 body.dark .name {
   color: white;
   text-shadow: 0 0 10px rgb(255, 255, 255);
@@ -130,13 +130,6 @@ body.dark .name {
   font-size: 1.05rem;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 16px;
-  padding: 0;
-  margin: 0;
-}
 
 .nav-links a {
   text-decoration: none;
@@ -250,7 +243,7 @@ body.dark .name {
 }
 
 /* =========
-   Buttons / Links
+   Buttons/Links
 ========= */
 
 .primary-btn,

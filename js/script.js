@@ -1,11 +1,5 @@
 "use strict";
 
-/*
-  Lamees note:
-  Keeping JS small + clear for Assignment 1.
-  Later assignments can expand interactivity without rewriting everything.
-*/
-
 const THEME_KEY = "lamees-theme";
 
 function setYear() {

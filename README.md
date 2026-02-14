@@ -50,6 +50,15 @@ Full details are available in:
 
 ---
 
+## Responsive Design
+
+The website is fully responsive and adapts to desktop, tablet, and mobile devices.
+
+Example mobile view:
+![Mobile View](assets/images/mobile-view.png)
+
+---
+
 ## External Links
 
 - LinkedIn profile
