@@ -15,6 +15,23 @@ function setYear() {
   const now = new Date();
   yearEl.textContent = String(now.getFullYear());
 }
+function setGreeting() {
+  const greetingEl = document.getElementById("greeting");
+  if (!greetingEl) return;
+
+  const now = new Date();
+  const hour = now.getHours();
+
+  let message = "Hello!";
+  if (hour >= 5 && hour < 12) message = "Good morning ☀️";
+  else if (hour >= 12 && hour < 17) message = "Good afternoon 🌤️";
+  else if (hour >= 17 && hour < 21) message = "Good evening 🌙";
+  else message = "Good night ✨";
+
+  greetingEl.textContent = `Hi there! ${message} `;
+}
+
+setGreeting();
 
 function applyTheme(theme) {
   const isDark = theme === "dark";
@@ -42,7 +59,6 @@ function initThemeToggle() {
     const nextTheme = currentlyDark ? "light" : "dark";
 
     applyTheme(nextTheme);
-    localStorage.setItem(THEME_KEY, nextTheme);
   });
 }
 

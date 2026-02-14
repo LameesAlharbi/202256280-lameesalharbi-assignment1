@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Lamees Alharbi — Software Engineering student portfolio. Projects, skills, and contact."
@@ -14,11 +14,7 @@
   </head>
 
   <body>
-    <!--
-      note:
-      Keeping the structure clean + semantic from day 1, so future assignments are easy to build on.
-    -->
-
+    <div id="top"></div>
     <header class="site-header" id="top">
       <nav class="navbar container" aria-label="Primary navigation">
         <a class="logo" href="#home" aria-label="Go to top">
@@ -43,21 +39,30 @@
       </nav>
     </header>
 
-    <main id="home">
+    <main class="container">
       <!-- HERO -->
       <section class="hero container" aria-label="Introduction">
         <div class="hero-text">
-          <h1>Hi, I am Lamees Alharbi</h1>
-
+          <p id="greeting" class="greeting"></p>
+          <h1>Hi, I am <span class="name">Lamees Alharbi</span></h1>
           <p class="tagline">
-            Software Engineering Student • Builder • Detail-Oriented Thinker
+            Software Engineering Student • Problem Solver • Detail-Oriented Thinker
           </p>
 
           <p class="intro">
-            I am a Software Engineering student at KFUPM who enjoys building clean,
-            structured, and purposeful web experiences. I care about clarity,
-            precision, and understanding every line of code I write.
+            I’m a Software Engineering student passionate about turning ideas into real, 
+            functional systems. I enjoy building thoughtful solutions, 
+            simplifying complex problems, and continuously learning to grow as a developer.
           </p>
+
+          <div class="social-links">
+          <a href="https://www.linkedin.com/in/lamees-alharbi-65870027b" target="_blank">
+          <img src="assets/images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/LameesAlharbi" target="_blank">
+          <img src="assets/images/github.jpeg" alt="GitHub">
+          </a>
+          </div>
 
           <div class="hero-actions">
             <a class="primary-btn" href="#projects">View Projects</a>
@@ -76,7 +81,7 @@
         <header class="section-header">
           <h2>About Me</h2>
           <p class="section-subtitle">
-            A quick snapshot — the longer story is in my projects.
+            A quick snapshot
           </p>
         </header>
 
@@ -99,7 +104,7 @@
         <header class="section-header">
           <h2>Projects</h2>
           <p class="section-subtitle">
-            Two highlights for now — this portfolio will grow each assignment.
+            My projects are continuously growing
           </p>
         </header>
 
@@ -107,10 +112,13 @@
           <article class="project-card" role="listitem">
             <div class="img-placeholder project-img" aria-label="Project image placeholder"></div>
             <div class="project-content">
-              <h3>Dining Subscription System</h3>
+              <img src="assets/images/Python-image-with-logo-940x530-1.webp" alt="QS Ranking Program Screenshot">
+
+              <h3>Universities QS Ranking Program</h3>
               <p>
-                A structured software design project where I translated requirements into
-                clear models and organized implementation logic.
+                A Python program developed for my ICS104 course that processes and organizes university ranking data 
+                based on QS rankings. The system allows users to view, search, and analyze rankings efficiently 
+                using structured data handling and logical programming techniques.
               </p>
               <button class="secondary-btn" type="button" data-project="dss">
                 Details
@@ -121,10 +129,13 @@
           <article class="project-card" role="listitem">
             <div class="img-placeholder project-img" aria-label="Project image placeholder"></div>
             <div class="project-content">
-              <h3>Masar (Concept)</h3>
+              <img src="assets/images/smartphone-usage-statistics.jpg" alt="Mobile Usage Classification Model">
+
+              <h3>Mobile Device Usage & User Behavior Classification</h3>
               <p>
-                A platform concept to help students explore majors through guided micro-experiences
-                and mentorship-based learning.
+                A classification project that analyzes mobile device usage patterns to categorize user behavior. 
+                The model is built using a dataset of 700 labeled samples with multiple features such as 
+                screen time, app usage, battery consumption, and data usage.
               </p>
               <button class="secondary-btn" type="button" data-project="masar">
                 Details
@@ -185,7 +196,7 @@
     <footer class="site-footer">
       <div class="container">
         <p>© <span id="year"></span> Lamees Alharbi. All rights reserved.</p>
-        <a class="back-to-top" href="#top">Back to top</a>
+        <a class="back-to-top" href="#top">Back to top ↑</a>
       </div>
     </footer>
   </body>
